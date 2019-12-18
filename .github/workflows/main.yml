@@ -15,9 +15,10 @@ jobs:
       run: bundler install
     - name: Import new posts
       run: bundler exec jekyll import rss --source https://dev.to/feed/dodevops
-    - name: Add & Commit
-      uses: EndBug/add-and-commit@v2.3.0
+    - uses: stefanzweifel/git-auto-commit-action@v2.5.0
       with:
-        message: (chore) Updated posts
-    - name: action-push
-      uses: ludeeus/action-push@0.0.1
+        commit_message: "chore: Adding blog posts"
+        branch: ${{ github.head_ref }}
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
