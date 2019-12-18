@@ -1,0 +1,21 @@
+name: Update Posts
+
+on: repository_dispatch
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup Ruby environment with ruby-build
+      uses: clupprich/ruby-build-action@v1.3.0
+    - name: Import new posts
+      run: bundler exec jekyll import rss --source https://dev.to/feed/dodevops
+    - name: Simple commit
+      uses: zwaldowski/git-commit-action@v1
+      with:
+        commit_message: (chore) Updated posts
+    - name: action-push
+      uses: ludeeus/action-push@0.0.1
