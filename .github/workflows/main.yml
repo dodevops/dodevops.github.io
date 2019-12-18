@@ -15,9 +15,9 @@ jobs:
       run: bundler install
     - name: Import new posts
       run: bundler exec jekyll import rss --source https://dev.to/feed/dodevops
-    - name: Simple commit
-      uses: zwaldowski/git-commit-action@v1
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v2.3.0
       with:
-        commit_message: (chore) Updated posts
+        message: (chore) Updated posts
     - name: action-push
       uses: ludeeus/action-push@0.0.1
