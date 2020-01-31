@@ -40,3 +40,8 @@ plugins:
 #   - vendor/ruby/
 show_excerpts: true
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
