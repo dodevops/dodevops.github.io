@@ -59,3 +59,5 @@ depending on the included platform.
 
 If you witness or are involved in an interaction with another member that you think may violate this Code of Conduct,
 please contact the project leads using this [mail address](conduct-breach@dodevops.io).
+
+*This Code Of Conduct is based on the awesome work [of the Godot project](https://godotengine.org/code-of-conduct)*
