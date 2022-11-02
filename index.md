@@ -1,12 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+title: Welcome to DO! DevOps
 layout: home
 list_title: "Our <a href=https://dev.to/dodevops/>dev.to posts</a>"
 ---
-
-## Welcome to DO! DevOps
 
 <img align="right" width="100" height="100" src="/assets/img/logo.png" style="padding:1em" alt="The DO! DevOps Logo">
 
